@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário em HTML - Atividade Prática 02 - HTML</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Heading Tag de primeiro nível (Maior)</h1>
+        <h3>Heading Tag de terceiro nível (Intermediário)</h3>
+        <h6>Heading Tag de sexto nível (Menor)</h6>
+        <p class="top-paragraph">Parágrafo</p>
+    </div>
+
+	<div id="links">
+		<div id="linkedin">
+			<img class="linkedin-image" src="./profile_linkedin.png" alt="Foto de Perfil do LinkedIn">
+			<p class="img-paragraph">Acesse meu perfil do LinkedIn clicando <a href="https://www.linkedin.com/in/natan-trevisol-349001182/" target="_blank">AQUI</a></p>
+		</div>
+
+		<div id="facebook">
+			<img class="fb-image" src="https://neilpatel.com/wp-content/uploads/2019/06/facebook.png" alt="Logo do Facebook">
+			<p class="img-paragraph">Acesse a página inicial do Facebook clicando <a href="https://pt-br.facebook.com/" target="_blank">AQUI</a></p>
+		</div>
+	</div>
+	
+    <div id="form">
+        <form class="form-items">
+            <label><b>Nome </b></label>
+            <input type="text" placeholder="Digite seu Nome Completo" maxlength="50" required>
+            <br>
+            <label><b>E-mail </b></label>
+            <input type="email" placeholder="Digite seu E-mail" maxlength="50" required>
+            <br>
+            <label><b>Telefone </b></label>
+            <input type="tel" placeholder="Digite seu Número de Telefone"
+			maxlength="11" 
+			pattern="[0-9]{11}" required>
+            <br>
+            <label><b>Profissão </b></label>
+            <select name="profissao" required>
+				<option value="" selected disabled hidden>Selecione</option>
+                <option value="administrador">Administrador</option>
+                <option value="advogado">Advogado</option>
+                <option value="matematico">Matemático</option>
+                <option value="professor">Professor</option>
+                <option value="analista-sistemas">Analista de Sistemas</option>
+                <option value="medico">Médico</option>
+				<option value="outro">Outra</option>
+            </select>
+            <br>
+			<label><b>Eu sou</b></label>
+			<div class="form-radio">
+				<input type="radio" id="male" name="gender" value="Homem">
+				<label for="male">Homem</label><br>
+				<input type="radio" id="female" name="gender" value="Mulher">
+				<label for="female">Mulher</label><br>
+				<input type="radio" id="other" name="gender" value="Não Informado">
+				<label for="other">Prefiro não informar</label>
+			</div>
+			<div class="form-btn">
+				<button onclick="() => alert('Formulário Enviado Com Sucesso!')">Enviar</button>
+			</div>
+        </form>
+    </div>
+</body>
+</html>
