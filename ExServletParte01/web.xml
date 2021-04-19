@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>OlaMundo</servlet-name>
+        <servlet-class>br.ppw.exservletparte1.OlaMundo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OlaMundo</servlet-name>
+        <url-pattern>/Ola</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Tabuada</servlet-name>
+        <servlet-class>br.ppw.exservletparte1.Tabuada</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Tabuada</servlet-name>
+        <url-pattern>/Tabuada</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MeuFormulario</servlet-name>
+        <servlet-class>br.ppw.exservletparte1.MeuFormulario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MeuFormulario</servlet-name>
+        <url-pattern>/MeuFormulario</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
